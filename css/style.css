@@ -1,0 +1,21 @@
+.circle-label {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid indigo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s linear;
+}
+.circle-label:hover {
+    background-color: indigo;
+    color: white;
+}
+.circle-label:active {
+    background-color: #1c022e;
+    color: white;
+}
+.label_input {
+    display: none;
+}

@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body class="text-primary">
+    <div class="container">
+        <h1 class="text-center text-success">Pitsa buyurtma qilish</h1>
+        <div class="row">
+            <div class="col-8 text-primary">
+                <div class="select_non_js py-5">
+                    <h2>Noni qanday bo'lsin?</h2>
+                    <select class="form-select w-50" aria-label="Default select example" id="mySelect">
+                        <option selected>Bu yerda tanlang</option>
+                        <option value="1">Yupqa</option>
+                        <option value="2">Standart</option>
+                        <option value="3">Qalin</option>
+                    </select>
+                </div>
+                <div class="kattaligi py-5">
+                    <h2>Kattaligi</h2>
+                    <div class="row row-cols-3 w-50">
+                        <div class="div-flex">
+                            <label for="20sm" class="circle-label">20sm
+                                <input type="radio" id="20sm" class="label_input" value="20sm" name="radioCheck">
+                            </label>
+                        </div>
+                        <div class="div-flex">
+                            <label for="25sm" class="circle-label">25sm
+                                <input type="radio" id="25sm" class="label_input" value="25sm" name="radioCheck">
+                            </label>
+                        </div>
+                        <div class="div-flex">
+                            <label for="30sm" class="circle-label">30sm
+                                <input type="radio" id="30sm" class="label_input" value="30sm" name="radioCheck">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="Ustiga py-5">
+                    <h2>Ustiga nima solaylik?</h2>
+                    <div class="row row-cols-2 w-50">
+                        <label class="checkbox-input col">
+                            <input type="checkbox" value="pomidor">
+                            <span>Pomidor</span>
+                        </label>
+                        <label class="checkbox-input col">
+                            <input type="checkbox" value="kurka go'shti">
+                            <span>Kurka go'shti</span>
+                        </label>
+                        <label class="checkbox-input col">
+                            <input type="checkbox" value="zaytun">
+                            <span>Zaytun</span>
+                        </label>
+                        <label class="checkbox-input col">
+                            <input type="checkbox" value="tuzlangan bodring">
+                            <span>Tuzlangan bodring</span>
+                        </label>
+                        <label class="checkbox-input col">
+                            <input type="checkbox" value="qo'ziqorin">
+                            <span>Qo'ziqorin</span>
+                        </label>
+                        <label class="checkbox-input col">
+                            <input type="checkbox" value="qazi">
+                            <span>Qazi</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="qoshimcha py-5">
+                    <h2>Qo'shimchalar</h2>
+                    <div class="row row-cols-2 w-50">
+                        <label class="checkbox-input col">
+                            <input type="checkbox" value="achchiq">
+                            <span>Achchiq</span>
+                        </label>
+                        <label class="checkbox-input col">
+                            <input type="checkbox" value="sosiskali">
+                            <span>Sosiskali</span>
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-4 text-danger border-start border-black">
+                <h4 class="py-3">Non: <span class="text-primary" id="selectedValue"></span></h4>
+                <h4 class="py-4">Kattaligi: <span class="text-primary" id="selectedSize"></span></h4>
+                <h4 class="">Ustida: <span class="text-primary" id="selectedItems"></span></h4>
+                <ul class="list-group-numbered listt text-primary"></ul>
+                <h4 class="py-4">Qo'shimcha: <span class="text-primary" id="selectedAdditions"></span></h4>
+                <button type="button" class="btn btn-outline-success">Buyurtma berish</button>
+            </div>
+        </div>
+    </div>
+    <script src="javaScript/index.js"></script>
+</body>
+</html>
